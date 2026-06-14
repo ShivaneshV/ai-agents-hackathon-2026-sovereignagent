@@ -1,0 +1,16 @@
+{
+  "name": "sovereignagent-cortex",
+  "version": "1.0.0",
+  "description": "Autonomous Financial Compliance MLOps Swarm",
+  "scripts": {
+    "dev": "vite",
+    "swarm": "node swarm_orchestrator.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "vite": "^5.0.0"
+  }
+}

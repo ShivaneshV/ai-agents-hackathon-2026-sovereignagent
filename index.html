@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SovereignAgent: Cortex | AI Agents Hackathon 2026</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+        <aside class="sidebar">
+            <div class="logo"><h2>CORTEX</h2></div>
+            <nav id="sidebar-nav">
+                <a href="#" data-tab="tab-autonomous" class="active"><i class="fas fa-network-wired"></i> Autonomous Systems</a>
+                <a href="#" data-tab="tab-voice"><i class="fas fa-microphone-alt"></i> Voice & Conv AI</a>
+                <a href="#" data-tab="tab-generative"><i class="fas fa-book"></i> Generative AI (RAG)</a>
+                <a href="#" data-tab="tab-healthcare"><i class="fas fa-heartbeat"></i> Healthcare Audits</a>
+                <a href="#" data-tab="tab-finance" class=""><i class="fas fa-coins"></i> Finance & Staking</a>
+                <a href="#" data-tab="tab-devtools"><i class="fas fa-code-branch"></i> Developer Tools</a>
+                <a href="#" data-tab="tab-open-innovation"><i class="fas fa-globe"></i> Model Alignment</a>
+            </nav>
+            <div class="sponsors-card" style="margin-bottom: 15px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.05); padding: 15px; border-radius: 10px;">
+                <p style="font-size: 10px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;">Sponsor Tracks</p>
+                <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+                    <span class="badge" style="background: rgba(139, 92, 246, 0.15); color: var(--accent-purple); font-size: 11px; padding: 4px 8px; border: 1px solid rgba(139, 92, 246, 0.3); border-radius: 6px;"><i class="fas fa-network-wired"></i> Adaption</span>
+                    <span class="badge" style="background: rgba(245, 158, 11, 0.15); color: var(--accent-yellow); font-size: 11px; padding: 4px 8px; border: 1px solid rgba(245, 158, 11, 0.3); border-radius: 6px;"><i class="fas fa-coins"></i> Sharp Economy</span>
+                </div>
+            </div>
+            <div class="wallet-card">
+                <p>Sharp Wallet Balance</p>
+                <h3 id="wallet-balance">250.00 SHARP</h3>
+                <div class="address">0x7F...3B9A</div>
+            </div>
+        </aside>
+
+        <main class="dashboard">
+            <header>
+                <div>
+                    <h1 id="dashboard-title">Autonomous Systems</h1>
+                    <p class="subtitle" id="dashboard-subtitle">Multi-Agent Swarm Monitor & KPIs</p>
+                </div>
+                <div class="status-badge pulse">Swarm Active</div>
+            </header>
+
+            <div id="tab-autonomous" class="tab-content active">
+                <section class="kpi-grid">
+                    <div class="card"><h4>Total Processed</h4><h2 id="kpi-total">0</h2></div>
+                    <div class="card"><h4>Adaption Verified (>90%)</h4><h2 id="kpi-passed" class="text-green">0</h2></div>
+                    <div class="card warning"><h4>Hallucinations Caught</h4><h2 id="kpi-failed" class="text-red">0</h2></div>
+                    <div class="card token"><h4>Tokens in Escrow</h4><h2 id="kpi-escrow" class="text-yellow">0</h2></div>
+                </section>
+                <section class="terminal-section">
+                    <div class="terminal-header">
+                        <div class="dots"><span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span></div>
+                        <span class="title">swarm_orchestrator.js - Node API</span>
+                    </div>
+                    <div class="terminal-body" id="terminal-logs"></div>
+                </section>
+            </div>
+
+            <div id="tab-voice" class="tab-content">
+                <div class="voice-agent-container card">
+                    <div class="voice-wave hidden" id="voice-wave">
+                        <div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div>
+                    </div>
+                    <div class="chat-pane" id="chat-pane">
+                        <div class="message ai">Hello, I am your Sovereign Voice Agent. Ask me to interpret any localized compliance guideline.</div>
+                    </div>
+                    <div class="voice-controls">
+                        <input type="text" id="voice-input" class="input-dark" placeholder="Type or speak your query...">
+                        <button id="btn-speak" class="btn-voice"><i class="fas fa-microphone"></i></button>
+                        <button id="btn-send-chat" class="btn-primary"><i class="fas fa-paper-plane"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="tab-generative" class="tab-content">
+                <div class="rag-container">
+                    <div class="search-bar card" style="display:flex; align-items:center;">
+                        <i class="fas fa-search"></i>
+                        <input type="text" class="input-dark" style="border:none; margin-left:10px; flex:1;" placeholder="Search RAG Knowledge Base...">
+                        <button class="btn-primary">Deep-Link</button>
+                    </div>
+                    <div class="grid-2 mt-3">
+                        <div class="doc-item card" onclick="openPDFViewer('RBI_Guidelines_2026.pdf')">
+                            <i class="fas fa-file-pdf fa-2x text-red" style="margin-right:15px;"></i>
+                            <div>
+                                <h4>RBI Regulatory Guidelines 2026</h4>
+                                <p class="text-muted" style="font-size:12px;">Financial compliance rules & loan policies</p>
+                            </div>
+                        </div>
+                        <div class="doc-item card" onclick="openPDFViewer('HIPAA_Localization.pdf')">
+                            <i class="fas fa-file-pdf fa-2x text-red" style="margin-right:15px;"></i>
+                            <div>
+                                <h4>HIPAA & Regional Healthcare Data</h4>
+                                <p class="text-muted" style="font-size:12px;">Data privacy standards for medical records</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="tab-healthcare" class="tab-content">
+                <div class="grid-2">
+                    <div class="card">
+                        <h3>PHI Anonymizer Tool</h3>
+                        <p class="section-desc mt-2 text-muted" style="font-size:13px;">Test our clinical data redactor locally.</p>
+                        <textarea id="phi-input" rows="4" class="input-dark mt-3" style="resize:vertical;" placeholder="Enter patient text containing names (e.g. John Doe), phones (555-0198), or SSNs (000-12-3456)..."></textarea>
+                        <button id="btn-anonymize" class="btn-primary mt-3" style="width:100%">Run Local Anonymizer</button>
+                        <div id="phi-output" class="output-box mt-3">Ready.</div>
+                    </div>
+                    <div class="card">
+                        <h3>Medical Translation Audit Log</h3>
+                        <ul class="audit-list">
+                            <li><span class="badge pass">PASS</span> Consent Form (Spanish) - Score: 96%</li>
+                            <li><span class="badge pass">PASS</span> Dosage Instructions (French) - Score: 98%</li>
+                            <li><span class="badge fail">FAIL</span> Surgery Risks (German) - Score: 61% -> Routed to Auditor Portal</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div id="tab-finance" class="tab-content">
+                <div class="grid-2">
+                    <div class="auditor-portal card" style="display:flex; flex-direction:column; overflow:hidden;">
+                        <h2>Sharp Economy Bounty Board</h2>
+                        <div class="table-container mt-2" style="overflow-y:auto; flex:1;">
+                            <table id="bounty-table">
+                                <thead><tr><th>Doc Info</th><th>Hallucination</th><th>Action</th></tr></thead>
+                                <tbody></tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="calculator card">
+                        <h2>Yield Compounding Calculator</h2>
+                        <div class="calc-group mt-3">
+                            <label class="text-muted" style="font-size:13px;">Staked SHARP Tokens (Principal)</label>
+                            <input type="number" id="calc-principal" class="input-dark mt-2" value="100">
+                        </div>
+                        <div class="calc-group mt-3">
+                            <label class="text-muted" style="font-size:13px;">Yield Rate (%)</label>
+                            <input type="number" id="calc-rate" class="input-dark mt-2" value="15">
+                        </div>
+                        <div class="calc-group mt-3">
+                            <label class="text-muted" style="font-size:13px;">Time (Years)</label>
+                            <input type="number" id="calc-time" class="input-dark mt-2" value="1">
+                        </div>
+                        <button id="btn-calc" class="btn-primary mt-4" style="width:100%">Calculate Yield</button>
+                        <h3 id="calc-result" class="mt-4 text-green" style="text-align:center;"></h3>
+                    </div>
+                </div>
+            </div>
+
+            <div id="tab-devtools" class="tab-content">
+                <div class="grid-2">
+                    <div class="card" style="display:flex; flex-direction:column; gap:15px;">
+                        <div style="display:flex; align-items:center; gap:15px;">
+                            <i class="fas fa-database text-yellow" style="font-size: 30px;"></i>
+                            <div>
+                                <h2 style="font-size:18px;">Hugging Face Exporter</h2>
+                                <p class="text-muted" style="font-size:13px;">Dataset: <code>ShivaneshV/Sovereign-FinComply-Eval</code></p>
+                            </div>
+                        </div>
+                        <div class="progress-bar"><div class="fill" id="export-progress" style="width: 78%"></div></div>
+                        <p class="text-muted" style="font-size:12px;">Rows Evaluated: <span id="dev-rows">30</span></p>
+                        <button id="btn-export" class="btn-outline" style="width:100%"><i class="fas fa-sync"></i> Force Sync Parquet</button>
+                        
+                        <div style="border-top: 1px solid var(--border); padding-top: 15px; margin-top: 10px;">
+                            <h4>Hugging Face API Authenticator</h4>
+                            <input type="password" id="hf-api-token" class="input-dark mt-2" placeholder="hf_••••••••••••••••••••••••" value="hf_demo_token_sovereign_agent">
+                            <button id="btn-test-hf-conn" class="btn-primary mt-2" style="width:100%">Test HF API Connection</button>
+                            <div id="hf-conn-status" class="text-muted mt-2" style="font-size:12px;">Ready.</div>
+                        </div>
+                    </div>
+                    
+                    <div class="card" style="display:flex; flex-direction:column; gap:15px;">
+                        <div>
+                            <h3>Parquet Schema Integrity Validator</h3>
+                            <p class="text-muted" style="font-size:12px; margin-top: 4px;">Run columns and data type integrity verification before release.</p>
+                            <select id="schema-select" class="input-dark mt-2">
+                                <option value="Sovereign-FinComply-Spanish">Sovereign-FinComply-Spanish</option>
+                                <option value="Sovereign-FinComply-French">Sovereign-FinComply-French</option>
+                                <option value="Sovereign-FinComply-German">Sovereign-FinComply-German</option>
+                            </select>
+                            <button id="btn-check-schema" class="btn-primary mt-2" style="width:100%">Run Schema Verification</button>
+                            <div id="schema-check-output" class="output-box mt-2" style="min-height: 50px; font-size:11px;">Select schema and verify.</div>
+                        </div>
+                        
+                        <div>
+                            <h3>Commit History Logs</h3>
+                            <div class="terminal-body small-term mt-2" id="commit-logs" style="height:110px; background:#000; padding:10px; border-radius:6px; border:1px solid #333; overflow-y:auto;">
+                                <p class="log-green">✓ [10:02:15] Exported verified rows to Parquet.</p>
+                                <p class="log-cyan">ℹ [10:05:33] Adaption pipeline hook triggered.</p>
+                                <p class="log-green">✓ [10:15:00] Repo card README updated.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="tab-open-innovation" class="tab-content">
+                <div class="card">
+                    <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px;">
+                        <div>
+                            <h2>RLHF Dataset Alignment Explorer</h2>
+                            <p class="text-muted mt-1" style="font-size:13px;">View consensus, baseline translations, and human corrections.</p>
+                        </div>
+                        <button id="btn-download-align" class="btn-primary"><i class="fas fa-download"></i> Export alignment.json</button>
+                    </div>
+                    
+                    <div class="search-bar mt-3" style="display:flex; gap:15px; flex-wrap:wrap; align-items:center;">
+                        <input type="text" id="align-search" class="input-dark" style="flex:1; min-width: 250px;" placeholder="Search baseline rules or corrections...">
+                        <select id="align-lang-select" class="input-dark" style="width: 180px;">
+                            <option value="all">All Languages</option>
+                            <option value="Spanish">Spanish</option>
+                            <option value="French">French</option>
+                            <option value="German">German</option>
+                            <option value="Italian">Italian</option>
+                            <option value="Portuguese">Portuguese</option>
+                        </select>
+                    </div>
+                    
+                    <div class="table-container mt-4" style="overflow-x:auto;">
+                        <table style="width: 100%; border-collapse:collapse; text-align: left;">
+                            <thead>
+                                <tr style="border-bottom: 1px solid #333;">
+                                    <th style="padding:12px;">ID</th>
+                                    <th style="padding:12px; width: 40%;">Baseline English</th>
+                                    <th style="padding:12px;">Language</th>
+                                    <th style="padding:12px; width: 30%;">Translation Output</th>
+                                    <th style="padding:12px;">Consensus / Status</th>
+                                </tr>
+                            </thead>
+                            <tbody id="innovation-table">
+                                <!-- Populated dynamically by JS -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <div id="pdf-viewer-modal" class="modal hidden">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="pdf-title">Document Viewer</h3>
+                <button id="close-pdf" class="btn-close"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="modal-body pdf-body">
+                <div id="pdf-page-content" class="pdf-page"></div>
+            </div>
+            <div class="modal-footer pdf-controls">
+                <button id="pdf-prev" class="btn-outline">&lt; Prev</button>
+                <span id="pdf-page-num" style="color:white; font-weight:bold;">Page 1</span>
+                <button id="pdf-next" class="btn-outline">Next &gt;</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="toast" class="toast hidden"></div>
+    <script type="module" src="./main.js"></script>
+</body>
+</html>

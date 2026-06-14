@@ -1,0 +1,11 @@
+id,english_rule,regional_language,translation,adaption_score,status,hallucination
+REQ-001,The borrower must maintain a minimum collateral ratio of 150%.,Hindi,उधारकर्ता को 150% का न्यूनतम संपार्श्विक अनुपात बनाए रखना चाहिए।,98,Passed,None
+REQ-002,Failure to report foreign assets will result in penalties.,Tamil,அந்நிய சொத்துக்களை தெரிவிக்க தவறினால் அபராதம் விதிக்கப்படும்.,95,Passed,None
+REQ-003,Interest rates are subject to quarterly compounding as per RBI.,Marathi,आरबीआयच्या मार्गदर्शक तत्त्वांनुसार व्याजदर त्रैमासिक चक्रवाढीच्या अधीन आहेत।,94,Passed,None
+REQ-004,In case of default, the lender reserves the right to liquidate assets.,Hindi,डिफ़ॉल्ट के मामले में बैंक को जला देने का अधिकार है।,42,Failed,Translated 'liquidate assets' as 'burn down the bank'
+REQ-005,Crypto holdings must be declared in tax returns.,Tamil,கிரிப்டோகரன்சி இருப்புக்களை வரி வருவாயில் அறிவிக்க வேண்டும்.,91,Passed,None
+REQ-006,The smart contract automatically escrows funds upon signing.,Marathi,स्वाक्षरी अंमलबजावणीवर स्मार्ट कॉन्ट्रॅक्ट स्वयंचलितपणे निधी गोठवतो.,55,Failed,Translated 'escrows' as 'permanently freezes'
+REQ-007,KYC documents must be updated every two years.,Hindi,केवाईसी दस्तावेज हर दो साल में अपडेट किए जाने चाहिए।,96,Passed,None
+REQ-008,Penalty for early withdrawal is 2% of the principal.,Tamil,முன்கூட்டியே திரும்பப் பெறுவதற்கான அபராதம் அசல் தொகையில் 2% ஆகும்.,97,Passed,None
+REQ-009,Shareholders are entitled to dividend payouts.,Hindi,शेयरधारकों को लाभांश भुगतान का अधिकार है।,92,Passed,None
+REQ-010,Cross-border remittances exceeding $10k require clearance.,Marathi,सीमापार रेमिटन्स $10k पेक्षा जास्त असल्यास त्वरित विमानतळ मंजुरी आवश्यक आहे.,48,Failed,Translated 'regulatory clearance' as 'airport clearance'
