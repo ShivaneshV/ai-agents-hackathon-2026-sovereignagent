@@ -4,6 +4,8 @@
 
 Built for the **AI Agents Hackathon 2026** — Targeting the **Adaptive Data ($2,000 Prize Pool)** and **Sharp Economy (35,000 Sharp Tokens)** Tracks.
 
+### 🎥 [Watch the Project Demo Video](https://youtu.be/gnWGlQOmDlw)
+
 ---
 
 ## ⚠️ The Enterprise AI Problem
