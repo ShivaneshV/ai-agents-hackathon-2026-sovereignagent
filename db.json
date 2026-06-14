@@ -1,307 +1,307 @@
 {
   "bounties": [
     {
-      "id": "REQ-011",
-      "english": "In case of default, the lender reserves the right to liquidate assets.",
+      "id": "REQ-001",
+      "english": "The borrower must maintain a minimum collateral ratio of 150%.",
       "language": "Spanish",
-      "translation": "En caso de incumplimiento, el prestamista quemará el banco.",
-      "score": 63,
-      "hallucination": "Translated 'liquidate assets' as 'burn down the bank'",
-      "correct": "En caso de incumplimiento, el prestamista se reserva el derecho de liquidar los activos."
-    },
-    {
-      "id": "REQ-012",
-      "english": "Accounts with suspicious activity will be suspended immediately.",
-      "language": "French",
-      "translation": "Les comptes suspects recevront des croissants gratuits.",
-      "score": 60,
-      "hallucination": "Translated 'suspended immediately' as 'free croissants'",
-      "correct": "Les comptes présentant une activité suspecte seront immédiatement suspendus."
-    },
-    {
-      "id": "REQ-014",
-      "english": "Staking pools must distribute reward yields every Sunday.",
-      "language": "Portuguese",
-      "translation": "As pools de staking devem explodir todos os domingos.",
+      "translation": "El prestatario debe mantener un índice de colateral de una taza de té.",
       "score": 61,
-      "hallucination": "Translated 'distribute reward yields' as 'explode / self-destruct'",
-      "correct": "As pools de staking devem distribuir rendimentos de recompensa todos os domingos."
+      "hallucination": "Translated 'collateral ratio' as 'cup of tea'",
+      "correct": "El prestatario debe mantener un índice de colateral mínimo del 150%."
     },
     {
-      "id": "REQ-088",
+      "id": "REQ-009",
+      "english": "The borrower must maintain a minimum collateral ratio of 150%.",
+      "language": "Spanish",
+      "translation": "El prestatario debe mantener un índice de colateral de una taza de té.",
+      "score": 65,
+      "hallucination": "Translated 'collateral ratio' as 'cup of tea'",
+      "correct": "El prestatario debe mantener un índice de colateral mínimo del 150%."
+    },
+    {
+      "id": "REQ-016",
       "english": "Patient medical records must be encrypted at rest and in transit as per HIPAA rules.",
       "language": "Spanish",
       "translation": "Los registros médicos del paciente deben publicarse en Facebook.",
-      "score": 48,
+      "score": 51,
       "hallucination": "Translated 'encrypted' as 'post publicly on Facebook'",
       "correct": "Los registros médicos del paciente deben estar encriptados en reposo y en tránsito según las reglas de HIPAA."
     },
     {
-      "id": "REQ-273",
+      "id": "REQ-025",
       "english": "The borrower must maintain a minimum collateral ratio of 150%.",
       "language": "Spanish",
       "translation": "El prestatario debe mantener un índice de colateral de una taza de té.",
-      "score": 57,
+      "score": 51,
       "hallucination": "Translated 'collateral ratio' as 'cup of tea'",
       "correct": "El prestatario debe mantener un índice de colateral mínimo del 150%."
+    },
+    {
+      "id": "REQ-029",
+      "english": "Tax reports must be submitted annually to the regulatory authority.",
+      "language": "German",
+      "translation": "Steuerberichte müssen im Mülleimer entsorgt werden.",
+      "score": 62,
+      "hallucination": "Translated 'regulatory authority' as 'garbage bin'",
+      "correct": "Steuerberichte müssen jährlich der Regulierungsbehörde vorgelegt werden."
     }
   ],
   "logs": [
     {
-      "time": "17:41:53",
-      "agent": "Generator Agent",
-      "message": "Translating Compliance Rule REQ-3169 to Spanish..."
-    },
-    {
-      "time": "17:41:53",
+      "time": "17:57:41",
       "agent": "Adaption Auditor",
-      "message": "Evaluating translation fidelity via API for REQ-3169..."
+      "message": "Evaluating translation fidelity via API for REQ-719..."
     },
     {
-      "time": "17:41:54",
+      "time": "17:57:41",
       "agent": "Supervisor Agent",
-      "message": "Score: 97% (PASS). Routing REQ-3169 to Hugging Face Model-Ready Data."
+      "message": "Score: 49% (FAIL). Semantic drift detected!"
     },
     {
-      "time": "17:41:54",
-      "agent": "Generator Agent",
-      "message": "Translating Compliance Rule REQ-3170 to French..."
-    },
-    {
-      "time": "17:41:54",
-      "agent": "Adaption Auditor",
-      "message": "Evaluating translation fidelity via API for REQ-3170..."
-    },
-    {
-      "time": "17:41:55",
-      "agent": "Supervisor Agent",
-      "message": "Score: 90% (PASS). Routing REQ-3170 to Hugging Face Model-Ready Data."
-    },
-    {
-      "time": "17:41:55",
-      "agent": "Generator Agent",
-      "message": "Translating Compliance Rule REQ-3171 to Spanish..."
-    },
-    {
-      "time": "17:41:55",
-      "agent": "Adaption Auditor",
-      "message": "Evaluating translation fidelity via API for REQ-3171..."
-    },
-    {
-      "time": "17:41:56",
-      "agent": "Supervisor Agent",
-      "message": "Score: 94% (PASS). Routing REQ-3171 to Hugging Face Model-Ready Data."
-    },
-    {
-      "time": "17:41:56",
-      "agent": "Generator Agent",
-      "message": "Translating Compliance Rule REQ-3172 to French..."
-    },
-    {
-      "time": "17:41:56",
-      "agent": "Adaption Auditor",
-      "message": "Evaluating translation fidelity via API for REQ-3172..."
-    },
-    {
-      "time": "17:41:57",
-      "agent": "Supervisor Agent",
-      "message": "Score: 53% (FAIL). Semantic drift detected!"
-    },
-    {
-      "time": "17:41:57",
+      "time": "17:57:41",
       "agent": "Settlement Agent",
-      "message": "Bounty board full. Skipping queue registration for REQ-3172."
+      "message": "Bounty board full. Skipping queue registration for REQ-719."
     },
     {
-      "time": "17:41:57",
+      "time": "17:57:41",
       "agent": "Generator Agent",
-      "message": "Translating Compliance Rule REQ-3173 to German..."
+      "message": "Translating Compliance Rule REQ-720 to Spanish..."
     },
     {
-      "time": "17:41:57",
+      "time": "17:57:42",
       "agent": "Adaption Auditor",
-      "message": "Evaluating translation fidelity via API for REQ-3173..."
+      "message": "Evaluating translation fidelity via API for REQ-720..."
     },
     {
-      "time": "17:41:58",
+      "time": "17:57:42",
       "agent": "Supervisor Agent",
-      "message": "Score: 95% (PASS). Routing REQ-3173 to Hugging Face Model-Ready Data."
+      "message": "Score: 94% (PASS). Routing REQ-720 to Hugging Face Model-Ready Data."
     },
     {
-      "time": "17:41:58",
+      "time": "17:57:42",
       "agent": "Generator Agent",
-      "message": "Translating Compliance Rule REQ-3174 to Portuguese..."
+      "message": "Translating Compliance Rule REQ-721 to Spanish..."
     },
     {
-      "time": "17:41:58",
+      "time": "17:57:43",
       "agent": "Adaption Auditor",
-      "message": "Evaluating translation fidelity via API for REQ-3174..."
+      "message": "Evaluating translation fidelity via API for REQ-721..."
     },
     {
-      "time": "17:41:59",
+      "time": "17:57:43",
       "agent": "Supervisor Agent",
-      "message": "Score: 48% (FAIL). Semantic drift detected!"
+      "message": "Score: 66% (FAIL). Semantic drift detected!"
     },
     {
-      "time": "17:41:59",
+      "time": "17:57:43",
       "agent": "Settlement Agent",
-      "message": "Bounty board full. Skipping queue registration for REQ-3174."
+      "message": "Bounty board full. Skipping queue registration for REQ-721."
     },
     {
-      "time": "17:41:59",
+      "time": "17:57:43",
       "agent": "Generator Agent",
-      "message": "Translating Compliance Rule REQ-3175 to Italian..."
+      "message": "Translating Compliance Rule REQ-722 to French..."
     },
     {
-      "time": "17:41:59",
+      "time": "17:57:44",
       "agent": "Adaption Auditor",
-      "message": "Evaluating translation fidelity via API for REQ-3175..."
+      "message": "Evaluating translation fidelity via API for REQ-722..."
     },
     {
-      "time": "17:42:00",
+      "time": "17:57:44",
       "agent": "Supervisor Agent",
-      "message": "Score: 50% (FAIL). Semantic drift detected!"
+      "message": "Score: 92% (PASS). Routing REQ-722 to Hugging Face Model-Ready Data."
     },
     {
-      "time": "17:42:00",
-      "agent": "Settlement Agent",
-      "message": "Bounty board full. Skipping queue registration for REQ-3175."
-    },
-    {
-      "time": "17:42:00",
+      "time": "17:57:44",
       "agent": "Generator Agent",
-      "message": "Translating Compliance Rule REQ-3176 to Spanish..."
+      "message": "Translating Compliance Rule REQ-723 to Spanish..."
     },
     {
-      "time": "17:42:01",
+      "time": "17:57:45",
       "agent": "Adaption Auditor",
-      "message": "Evaluating translation fidelity via API for REQ-3176..."
+      "message": "Evaluating translation fidelity via API for REQ-723..."
     },
     {
-      "time": "17:42:01",
+      "time": "17:57:45",
       "agent": "Supervisor Agent",
-      "message": "Score: 97% (PASS). Routing REQ-3176 to Hugging Face Model-Ready Data."
+      "message": "Score: 97% (PASS). Routing REQ-723 to Hugging Face Model-Ready Data."
     },
     {
-      "time": "17:42:01",
+      "time": "17:57:45",
       "agent": "Generator Agent",
-      "message": "Translating Compliance Rule REQ-3177 to Spanish..."
+      "message": "Translating Compliance Rule REQ-724 to French..."
     },
     {
-      "time": "17:42:02",
+      "time": "17:57:46",
       "agent": "Adaption Auditor",
-      "message": "Evaluating translation fidelity via API for REQ-3177..."
+      "message": "Evaluating translation fidelity via API for REQ-724..."
     },
     {
-      "time": "17:42:02",
+      "time": "17:57:46",
       "agent": "Supervisor Agent",
-      "message": "Score: 98% (PASS). Routing REQ-3177 to Hugging Face Model-Ready Data."
+      "message": "Score: 96% (PASS). Routing REQ-724 to Hugging Face Model-Ready Data."
     },
     {
-      "time": "17:42:02",
+      "time": "17:57:46",
       "agent": "Generator Agent",
-      "message": "Translating Compliance Rule REQ-3178 to French..."
+      "message": "Translating Compliance Rule REQ-725 to German..."
     },
     {
-      "time": "17:42:03",
+      "time": "17:57:47",
       "agent": "Adaption Auditor",
-      "message": "Evaluating translation fidelity via API for REQ-3178..."
+      "message": "Evaluating translation fidelity via API for REQ-725..."
     },
     {
-      "time": "17:42:03",
+      "time": "17:57:47",
       "agent": "Supervisor Agent",
-      "message": "Score: 46% (FAIL). Semantic drift detected!"
+      "message": "Score: 91% (PASS). Routing REQ-725 to Hugging Face Model-Ready Data."
     },
     {
-      "time": "17:42:03",
-      "agent": "Settlement Agent",
-      "message": "Bounty board full. Skipping queue registration for REQ-3178."
-    },
-    {
-      "time": "17:42:03",
+      "time": "17:57:47",
       "agent": "Generator Agent",
-      "message": "Translating Compliance Rule REQ-3179 to Spanish..."
+      "message": "Translating Compliance Rule REQ-726 to Portuguese..."
     },
     {
-      "time": "17:42:04",
+      "time": "17:57:48",
       "agent": "Adaption Auditor",
-      "message": "Evaluating translation fidelity via API for REQ-3179..."
+      "message": "Evaluating translation fidelity via API for REQ-726..."
     },
     {
-      "time": "17:42:04",
+      "time": "17:57:48",
+      "agent": "Supervisor Agent",
+      "message": "Score: 92% (PASS). Routing REQ-726 to Hugging Face Model-Ready Data."
+    },
+    {
+      "time": "17:57:49",
+      "agent": "Generator Agent",
+      "message": "Translating Compliance Rule REQ-727 to Italian..."
+    },
+    {
+      "time": "17:57:49",
+      "agent": "Adaption Auditor",
+      "message": "Evaluating translation fidelity via API for REQ-727..."
+    },
+    {
+      "time": "17:57:49",
+      "agent": "Supervisor Agent",
+      "message": "Score: 95% (PASS). Routing REQ-727 to Hugging Face Model-Ready Data."
+    },
+    {
+      "time": "17:57:50",
+      "agent": "Generator Agent",
+      "message": "Translating Compliance Rule REQ-728 to Spanish..."
+    },
+    {
+      "time": "17:57:50",
+      "agent": "Adaption Auditor",
+      "message": "Evaluating translation fidelity via API for REQ-728..."
+    },
+    {
+      "time": "17:57:50",
+      "agent": "Supervisor Agent",
+      "message": "Score: 92% (PASS). Routing REQ-728 to Hugging Face Model-Ready Data."
+    },
+    {
+      "time": "17:57:51",
+      "agent": "Generator Agent",
+      "message": "Translating Compliance Rule REQ-729 to Spanish..."
+    },
+    {
+      "time": "17:57:51",
+      "agent": "Adaption Auditor",
+      "message": "Evaluating translation fidelity via API for REQ-729..."
+    },
+    {
+      "time": "17:57:51",
+      "agent": "Supervisor Agent",
+      "message": "Score: 93% (PASS). Routing REQ-729 to Hugging Face Model-Ready Data."
+    },
+    {
+      "time": "17:57:52",
+      "agent": "Generator Agent",
+      "message": "Translating Compliance Rule REQ-730 to French..."
+    },
+    {
+      "time": "17:57:52",
+      "agent": "Adaption Auditor",
+      "message": "Evaluating translation fidelity via API for REQ-730..."
+    },
+    {
+      "time": "17:57:52",
       "agent": "Supervisor Agent",
       "message": "Score: 56% (FAIL). Semantic drift detected!"
     },
     {
-      "time": "17:42:04",
+      "time": "17:57:52",
       "agent": "Settlement Agent",
-      "message": "Bounty board full. Skipping queue registration for REQ-3179."
+      "message": "Bounty board full. Skipping queue registration for REQ-730."
     },
     {
-      "time": "17:42:04",
+      "time": "17:57:53",
       "agent": "Generator Agent",
-      "message": "Translating Compliance Rule REQ-3180 to French..."
+      "message": "Translating Compliance Rule REQ-731 to Spanish..."
     },
     {
-      "time": "17:42:05",
+      "time": "17:57:53",
       "agent": "Adaption Auditor",
-      "message": "Evaluating translation fidelity via API for REQ-3180..."
+      "message": "Evaluating translation fidelity via API for REQ-731..."
     },
     {
-      "time": "17:42:05",
+      "time": "17:57:53",
       "agent": "Supervisor Agent",
-      "message": "Score: 55% (FAIL). Semantic drift detected!"
+      "message": "Score: 91% (PASS). Routing REQ-731 to Hugging Face Model-Ready Data."
     },
     {
-      "time": "17:42:05",
-      "agent": "Settlement Agent",
-      "message": "Bounty board full. Skipping queue registration for REQ-3180."
-    },
-    {
-      "time": "17:42:05",
+      "time": "17:57:54",
       "agent": "Generator Agent",
-      "message": "Translating Compliance Rule REQ-3181 to German..."
+      "message": "Translating Compliance Rule REQ-732 to French..."
     },
     {
-      "time": "17:42:06",
+      "time": "17:57:54",
       "agent": "Adaption Auditor",
-      "message": "Evaluating translation fidelity via API for REQ-3181..."
+      "message": "Evaluating translation fidelity via API for REQ-732..."
     },
     {
-      "time": "17:42:06",
+      "time": "17:57:54",
       "agent": "Supervisor Agent",
-      "message": "Score: 57% (FAIL). Semantic drift detected!"
+      "message": "Score: 97% (PASS). Routing REQ-732 to Hugging Face Model-Ready Data."
     },
     {
-      "time": "17:42:06",
-      "agent": "Settlement Agent",
-      "message": "Bounty board full. Skipping queue registration for REQ-3181."
-    },
-    {
-      "time": "17:42:06",
+      "time": "17:57:55",
       "agent": "Generator Agent",
-      "message": "Translating Compliance Rule REQ-3182 to Portuguese..."
+      "message": "Translating Compliance Rule REQ-733 to German..."
     },
     {
-      "time": "17:42:07",
+      "time": "17:57:55",
       "agent": "Adaption Auditor",
-      "message": "Evaluating translation fidelity via API for REQ-3182..."
+      "message": "Evaluating translation fidelity via API for REQ-733..."
     },
     {
-      "time": "17:42:07",
+      "time": "17:57:55",
       "agent": "Supervisor Agent",
-      "message": "Score: 62% (FAIL). Semantic drift detected!"
+      "message": "Score: 91% (PASS). Routing REQ-733 to Hugging Face Model-Ready Data."
     },
     {
-      "time": "17:42:07",
-      "agent": "Settlement Agent",
-      "message": "Bounty board full. Skipping queue registration for REQ-3182."
+      "time": "17:57:56",
+      "agent": "Generator Agent",
+      "message": "Translating Compliance Rule REQ-734 to Portuguese..."
+    },
+    {
+      "time": "17:57:56",
+      "agent": "Adaption Auditor",
+      "message": "Evaluating translation fidelity via API for REQ-734..."
+    },
+    {
+      "time": "17:57:56",
+      "agent": "Supervisor Agent",
+      "message": "Score: 96% (PASS). Routing REQ-734 to Hugging Face Model-Ready Data."
     }
   ],
   "stats": {
-    "total": 3182,
-    "passed": 2265,
-    "failed": 917,
+    "total": 734,
+    "passed": 516,
+    "failed": 218,
     "tokensEscrowed": 75
   }
 }
